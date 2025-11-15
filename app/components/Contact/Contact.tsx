@@ -4,7 +4,7 @@ import Button from "~/components/Button";
 import Section from "~/components/Section/Section";
 import { containerVariants, itemVariants } from "../Hero/Hero.animations";
 import Pulse from "../Pulse/Pulse";
-import WhatsApp from "~/icons/WhatsApp";
+import Telegram from "~/icons/Telegram";
 const Contact = () => {
   const ref = useRef<HTMLDivElement | null>(null);
   const inView = useInView(ref, { once: true, amount: 0.5 });
@@ -22,16 +22,16 @@ const Contact = () => {
             variants={itemVariants}
             className="text-3xl lg:text-4xl text-neutral-800 dark:text-neutral-400 font-bold"
           >
-            In need of a developer?
+            Need something awesome built?
           </motion.p>
           <motion.p
             variants={itemVariants}
             className="text-xl lg:text-2xl text-blue-600 dark:text-blue-400 flex items-center gap-3"
           >
-            <Pulse /> I’m currently available for work.
+            <Pulse /> Ping us and we'll get you started.
           </motion.p>
           <motion.div variants={itemVariants}>
-            <Button as="a" href="https://wa.me/+919975130529" className="w-fit">
+            <Button as="a" href="mailto:malik@ashternext.com" className="w-fit">
               Send a message
             </Button>
           </motion.div>
@@ -41,27 +41,20 @@ const Contact = () => {
             <motion.a
               whileHover={{ translateY: -4, scale: 1.05 }}
               variants={itemVariants}
-              className="bg-[#25d366] text-white rounded-full py-2 px-4 flex justify-center items-center gap-2"
-              href="https://wa.me/+919975130529"
+              className="bg-[#0088cc] text-white rounded-full py-2 px-4 flex justify-center items-center gap-2"
+              href="https://t.me/ashterb"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <WhatsApp className="size-8" /> <span>+91 9975130529</span>
+              <Telegram className="size-8" /> <span>ashterb</span>
             </motion.a>
-            <motion.span
-              variants={itemVariants}
-              className="text-sm text-neutral-500 dark:text-neutral-400"
-            >
-              Also available on{" "}
-              <span className="text-neutral-700 dark:text-neutral-500">
-                facetime
-              </span>
-            </motion.span>
           </div>
           <motion.a
             variants={itemVariants}
             className="text-neutral-500 dark:text-neutral-400 hover:text-blue-600 dark:hover:text-blue-400 font-semibold transition-colors"
-            href="mailto:hello@maalik.dev"
+            href="mailto:malik@ashternext.com"
           >
-            hello@maalik.dev
+            malik@ashternext.com
           </motion.a>
         </div>
       </motion.div>
