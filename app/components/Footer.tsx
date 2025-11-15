@@ -66,22 +66,26 @@ const Footer = () => {
         variants={containerVariants}
         initial="hidden"
         animate={inView ? "show" : "hidden"}
-        className="flex flex-col gap-8 lg:gap-0 text-center lg:flex-row justify-center lg:justify-between items-center lg:items-start"
+        className="flex flex-col gap-8 lg:gap-0 text-left lg:flex-row justify-center lg:justify-between items-start"
       >
         <motion.div className="flex flex-col text-neutral-700 dark:text-neutral-500 shrink-0 w-1/3">
           <motion.a
             variants={itemVariants}
             className="text-blue-600 dark:text-blue-400"
-            href="https://maalik.dev"
+            href="https://ashternext.com"
             target="__blank"
           >
-            Maalik
+            AshterNext
           </motion.a>
           <motion.p variants={itemVariants}>
-            Jamali Residency
-            <br /> Nashik, India
-            <br />
-            422011
+            FT-8, 3rd Floor
+            <br /> Jamali Residency
+            <br /> Takli Road, Singapur Garden
+            <br /> Dwarka, Nashik
+            <br /> Maharashtra 422011
+          </motion.p>
+          <motion.p variants={itemVariants} className="text-sm mt-2">
+            GSTIN: <span className="font-bold">27CSGPB6938L1ZB</span>
           </motion.p>
         </motion.div>
 
@@ -89,13 +93,13 @@ const Footer = () => {
           <motion.a
             variants={itemVariants}
             className="text-blue-600 dark:text-blue-400"
-            href="https://maalik.dev"
+            href="https://ashternext.com"
             target="__blank"
           >
             Terms & Conditions
           </motion.a>
           <motion.p variants={itemVariants}>
-            © {new Date().getFullYear()} Malik Bagwala
+            © {new Date().getFullYear()} AshterNext
           </motion.p>
         </motion.div>
 

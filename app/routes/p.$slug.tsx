@@ -62,7 +62,7 @@ export async function loader({ params }: { params: { slug: string } }) {
 export const meta: MetaFunction = ({ data }: any) => {
   if (!data) {
     return [
-      { title: "Project Not Found | Portfolio" },
+      { title: "Project Not Found | AshterNext" },
       {
         name: "description",
         content: "The project you are looking for does not exist.",
@@ -71,7 +71,7 @@ export const meta: MetaFunction = ({ data }: any) => {
   }
 
   return [
-    { title: `${data.title} | Portfolio` },
+    { title: `${data.title} | AshterNext` },
     {
       name: "description",
       content: data.description,
@@ -90,7 +90,7 @@ export const meta: MetaFunction = ({ data }: any) => {
     },
     {
       property: "og:url",
-      content: `https://yourdomain.com/projects/${data.slug}`,
+      content: `https://ashternext.com/projects/${data.slug}`,
     },
     {
       name: "twitter:card",
