@@ -37,7 +37,7 @@ const Navbar = ({ links, initialTheme }: NavBarType) => {
             <img src="/logo.webp" height={24} width={24} alt="Logo" />
             <Link to={"/"}>
               <motion.h1 className="bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-blue-400 font-bold">
-                maalik.dev
+                AshterNext
               </motion.h1>
             </Link>
           </div>
