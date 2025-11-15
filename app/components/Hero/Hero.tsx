@@ -37,7 +37,7 @@ const Hero = () => {
             animate={isMounted ? "show" : "hidden"}
           >
             <motion.p className="flex text-2xl gap-2 " variants={itemVariants}>
-              <span>Hi there, I&apos;m Malik</span>
+              <span>Welcome to AshterNext</span>
               <motion.img
                 src="/icons/waving-hand.svg"
                 alt="waving-hand"
@@ -50,7 +50,7 @@ const Hero = () => {
               className="text-balance text-3xl lg:text-4xl text-neutral-800 dark:text-neutral-200 select-text font-bold leading-tight lg:leading-snug"
               variants={itemVariants}
             >
-              I help people and brands reach their business goals by designing &
+              We help people and brands reach their business goals by designing &
               building{" "}
               <motion.span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-teal-600 dark:from-teal-400 dark:to-blue-400 font-bold">
                 customer-centric software products
@@ -63,14 +63,14 @@ const Hero = () => {
               variants={itemVariants}
             >
               <Button size="large" as={Link} to={{ hash: "projects" }}>
-                View my work
+                View our work
               </Button>
               <a
                 className="lg:text-lg font-semibold text-teal-600 dark:text-teal-500"
                 href={SOCIALS[0].link}
                 target="__blank"
               >
-                More about me
+                Learn more about us
               </a>
             </motion.div>
           </motion.div>
