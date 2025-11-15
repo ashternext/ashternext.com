@@ -48,11 +48,11 @@ export const links: LinksFunction = () => [
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Malik Bagwala | Freelance Software Engineer" },
+    { title: "AshterNext | Software Development & Digital Solutions" },
     {
       name: "description",
       content:
-        "I help people and brands reach their business goals by designing & building customer-centric software products and interactive experiences",
+        "We help people and brands reach their business goals by designing & building customer-centric software products and interactive experiences",
     },
   ];
 };
@@ -147,7 +147,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       render: testimonials.total ? true : false,
     },
     { to: "#contact", name: "Contact" },
-    { to: "#why-me", name: "Why Me?", render: false },
+    { to: "#why-us", name: "Why Us?", render: false },
   ].filter((l) => l.render !== false);
 
   return (
